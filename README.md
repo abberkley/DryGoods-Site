@@ -1,8 +1,3 @@
-# Static Web Project Starter
+# Drygoods redesign concept
 
-Static web course project starter.
-
-```
-npm install
-npm start
-```
+Made with html and sass.
