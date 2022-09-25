@@ -12,14 +12,8 @@
     &_details {
         img {
             height: 310px;
-            margin: 1.5rem 0rem;
-        }
-
-        &_text {
-            ul {
-                color: $color-hyperlink;
-                margin-bottom: 5rem;
-            }
+            margin: 1.5rem auto;
+            display: block;
         }
     }
 
@@ -28,6 +22,12 @@
             line-height: 4rem;
             font-weight: 700;
         }
+
+        &_color {
+            margin-bottom: 5rem;
+            color: $color-hyperlink;
+        }
+
 
  }
 
@@ -59,7 +59,7 @@
 }
 
 @include media-lg {
-    .product {
+    .product-page {
         width: 80%;
         margin: 8rem auto 12rem;
 
@@ -75,10 +75,6 @@
                 width: 49%;
                 height: 577px;
             }
-
-            &_text {
-                width: 45%;
-            }
             
             &_price {
                 font-size: 3.2rem;
@@ -90,6 +86,7 @@
                 color: var(--color-hyperlink);
                 margin-top: 3.5rem;
                 margin-bottom: 11.5rem; 
+                width: 45%;
             }
 
         }

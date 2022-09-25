@@ -1,13 +1,10 @@
+@import 'config';
 @import 'color', 'typography';
-
-body {
-  width: 360px;
-  margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-}
+@import 'footer', 'nav';
+@import 'category';
+@import 'error';
+@import 'product';
+@import 'home';
 
 .btn.secondary {
   background-color: $color-secondary;
@@ -15,23 +12,3 @@ img {
   width: 46%;
   margin: 0 6.8rem;
 }
-
-@mixin media-md {
-  @media screen and (min-width: 768px) {
-      @content;
-  }
-}
-
-@mixin media-lg {
-  @media screen and (min-width: 1200px) {
-      @content;
-  }
-}
-
-
-@import 'footer', 'nav';
-
-@import 'category';
-@import 'error';
-@import 'product';
-@import 'home';

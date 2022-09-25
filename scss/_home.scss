@@ -3,6 +3,8 @@
 
     img {
         height: 401px;
+        display: block;
+        margin: 0 auto;
     }
 
     &_text {
@@ -26,12 +28,12 @@
         font-size: 3.4rem;
       }
 
-
 }
-
 
 .home {
     .new-arrivals {
+        width: 72%;
+
         h2 {
             color: $color-primary;
             margin: 7.5rem 5rem 2rem;
@@ -49,21 +51,27 @@
     .ad-tiles {
         &_tile-1 {
             background-color: $color-secondary;
+            padding: 12.5rem 5rem;
+           h2 {
             color: #ffffff;
             width: 72%;
-            padding: 12.5rem 5rem;
+           }
+
         }
 
         &_tile-2, &_tile-4 {
+            display:inline-block;
             height: 320px;
         }
 
         &_tile-3 {
             background-color: $color-hyperlink;
-            color: white;
-            width: 72%;
             padding: 5.1rem 4.9rem;
-
+            &_text {
+                width: 72%;
+                color: #ffffff;
+            }
+            
             .p-end {
                 margin-bottom: 3rem;
             }
@@ -80,36 +88,44 @@
             padding: 7.6rem 6.9rem 9.5rem;
         }
     }
-
+    
     .home {
         .new-arrivals {
+            width: 100%;
+
             h2 {
                 margin: 5rem 40.4rem 3.5rem 8rem;
             }
-
+    
             ul {
                 display: flex;
                 width: 100%;
                 padding: 0rem;
             }
-
+    
             img {
                 height: 295px;  
             }
         }
-
+    
         .ad-tiles {
             &_tile-1 {
                 float: left;
                 box-sizing: border-box;
                 width: 50%;
-                padding: 12rem 5.5rem;
+                padding: 0;
+                
+                h2 {
+                    padding: 12rem 5.5rem;
+                    width: 100%;
+                }
+
             }
     
             &_tile-2, &_tile-4 {
                 width: 50%;
             }
-
+    
             &_tile-2 {
                 float: right;
             }
@@ -121,13 +137,15 @@
                 padding: 5.1rem 4.9rem 5.9rem;
     
             }
-
+    
             &_tile-4 {
                 float: left;
             }
         }
     }
+    
 }
+
 
 @include media-lg {
     p {
@@ -173,7 +191,7 @@
 
         .ad-tiles {
             &_tile-1 {
-                padding: 22.7rem 9rem;
+                padding: 13.7rem 9rem;
                 height: 580px;
             }
     
@@ -187,7 +205,7 @@
             }
 
             &_tile-4 {
-                float: left;
+                width: 602px;
             }
 
             h2 {

@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  
+
+@mixin media-md {
+    @media screen and (min-width: 744px) {
+        @content;
+    }
+  }
+  
+  @mixin media-lg {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+  }
