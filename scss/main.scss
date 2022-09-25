@@ -1,12 +1,4 @@
-@import 'category';
-@import 'error';
-@import 'footer';
-@import 'nav';
-@import 'product';
-@import 'home';
 @import 'color', 'typography';
-
-
 
 body {
   width: 360px;
@@ -16,3 +8,30 @@ body {
 img {
   max-width: 100%;
 }
+
+.btn.secondary {
+  background-color: $color-secondary;
+  color: #ffffff;
+  width: 46%;
+  margin: 0 6.8rem;
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+      @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1200px) {
+      @content;
+  }
+}
+
+
+@import 'footer', 'nav';
+
+@import 'category';
+@import 'error';
+@import 'product';
+@import 'home';

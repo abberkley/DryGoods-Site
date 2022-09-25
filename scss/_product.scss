@@ -1,34 +1,97 @@
-.product {
-    &-page {
-        width: 72%;
-        margin: 4rem auto 6rem;
+.product-page {
+    width: 72%;
+    margin: 4rem auto 6rem;
 
-        .h2 {
-            font-family: $text-secondary;
-            color: $color-primary;
-            font-size: 2.5rem;
-            line-height: 3rem;
+    .h2 {
+        font-family: $text-secondary;
+        color: $color-primary;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    &_details {
+        img {
+            height: 310px;
+            margin: 1.5rem 0rem;
+        }
+
+        &_text {
+            ul {
+                color: $color-hyperlink;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    &_price {
+            font-size: 2rem;
+            line-height: 4rem;
+            font-weight: 700;
+        }
+
+ }
+
+ @include media-md {
+    .product-page {
+        width: 78%;
+        margin: 8.8rem auto;
+
+        h2 {
+            font-size: 4.7rem;
+            line-height: 5rem;
         }
 
         &_details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3.2rem;
+
             img {
-                height: 310px;
-                margin: 1.5rem 0rem;
+                width: 48%;
+                margin: 0rem;  
             }
 
             &_text {
-                ul {
-                    color: $color-hyperlink;
-                    margin-bottom: 5rem;
-                }
+                width: 44%;
             }
         }
     }
+}
 
-    &-price {
-        font-size: 2rem;
-        line-height: 4rem;
-        font-weight: 700;
+@include media-lg {
+    .product {
+        width: 80%;
+        margin: 8rem auto 12rem;
+
+        h2 {
+            font-size: 6rem;
+            line-height: 8rem;
+        }
+
+        &_details {
+            margin-top: 2.1rem;
+
+            img {
+                width: 49%;
+                height: 577px;
+            }
+
+            &_text {
+                width: 45%;
+            }
+            
+            &_price {
+                font-size: 3.2rem;
+                line-height: 4rem;
+                margin-bottom: 3.5rem;
+            }
+    
+            &_color {
+                color: var(--color-hyperlink);
+                margin-top: 3.5rem;
+                margin-bottom: 11.5rem; 
+            }
+
+        }
     }
-
- }
+}

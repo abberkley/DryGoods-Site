@@ -19,3 +19,33 @@
         color: $color-body;
     }
 }
+
+@include media-md {
+    .nav {
+        img {
+            width: 53%;
+            padding: 3rem 17.2rem 2.5rem;
+        }
+
+        ul {
+            padding: 0rem 10.3rem 3.5rem;
+        }
+    }
+}
+
+@include media-lg {
+    .nav {
+        img {
+            width: 51%;
+            padding: 3rem 29rem 2.5rem;
+        }
+
+        ul {
+            padding: 0rem 16.6rem 3.5rem;
+        }
+
+        a {
+            font-size: 2rem;
+        }
+    }
+}

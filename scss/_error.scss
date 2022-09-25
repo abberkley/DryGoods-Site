@@ -11,3 +11,23 @@
         color: $color-secondary;
     }
 }
+
+@include media-md {
+    .error {
+        width: 63%;
+        margin: 12.5rem auto;
+    }
+}
+
+@include media-lg {
+    .error {
+        width: 82%;
+        margin: 21.5rem auto;
+      
+        h1 {
+            font-size: 4.7rem;
+            line-height: 4rem;
+      }
+    }
+
+}
