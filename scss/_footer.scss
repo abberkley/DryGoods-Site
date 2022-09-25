@@ -1,0 +1,24 @@
+.footer {
+    background-color: $color-primary;
+    color: #ffffff;
+
+    &_links {
+        padding: 4rem 5.3rem 8rem;
+
+        a {
+            color: #ffffff;
+        }
+
+        ul {
+            padding-inline-start: 0;
+        }
+
+        &_help {
+            margin-top: 3rem;
+
+            .link-style {
+                margin: 0px;
+            }
+        }
+    }
+}

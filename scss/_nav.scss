@@ -1,0 +1,21 @@
+.nav {
+    background: $color-bg;
+
+    img {
+        width: 72%;
+        padding: 3rem 5rem 2rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 72%;
+        padding: 0rem 5rem 3.5rem;
+    }
+
+    li {
+        width: 46%;
+        text-align: center;
+        color: $color-body;
+    }
+}

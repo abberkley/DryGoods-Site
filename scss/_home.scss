@@ -1,0 +1,73 @@
+.hero {
+    position: relative;
+
+    img {
+        height: 401px;
+    }
+
+    &_text {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        right: 8%;
+        bottom: 5%;
+        background-color: $color-secondary;
+        opacity: 0.9;
+        color: white;
+        text-align: center;
+        padding: 9.5rem 2rem;
+
+        a {
+            color: $color-primary;
+        }
+    }
+
+    h1 {
+        font-size: 3.4rem;
+      }
+
+
+}
+
+
+.home {
+    .new-arrivals {
+        h2 {
+            color: $color-primary;
+            margin: 7.5rem 5rem 2rem;
+        }
+
+        ul {
+            padding: 0rem 5rem;
+        }
+
+        img {
+            height: 310px;
+        }
+    }
+
+    .ad-tiles {
+        &_tile-1 {
+            background-color: $color-secondary;
+            color: #ffffff;
+            width: 72%;
+            padding: 12.5rem 5rem;
+        }
+
+        &_tile-2, &_tile-4 {
+            height: 320px;
+        }
+
+        &_tile-3 {
+            background-color: $color-hyperlink;
+            color: white;
+            width: 72%;
+            padding: 5.1rem 4.9rem;
+
+            .p-end {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+}

@@ -4,8 +4,15 @@
 @import 'nav';
 @import 'product';
 @import 'home';
+@import 'color', 'typography';
 
 
-* {
+
+body {
+  width: 360px;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
