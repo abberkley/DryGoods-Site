@@ -466,7 +466,7 @@ p {
     padding: 5.1rem 4.9rem 5.9rem;
   }
   .home .ad-tiles_tile-4 {
-    float: left;
+    float: right;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -507,11 +507,11 @@ p {
     height: 580px;
   }
   .home .ad-tiles_tile-3 {
-    padding: 9.5rem 8rem 17rem;
+    padding: 15.5rem 8rem;
     height: 580px;
   }
   .home .ad-tiles_tile-4 {
-    width: 602px;
+    width: 600px;
   }
   .home .ad-tiles h2 {
     font-size: 4.7rem;
