@@ -1,0 +1,105 @@
+/* Center body and fix to minimum width */
+body {
+  width: 360px;
+  margin: 0 auto;
+}
+/* Other mobile (default) styles go here */
+.category-hero {
+  position: relative;
+}
+
+.category-hero img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-hero h1 {
+  position: absolute;
+  top: 21%;
+  left: 15%;
+  right: 15%;
+  width: 72%;
+  font-size: var(--size-h1);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: var(--color-primary);
+}
+
+ul.list-of-products {
+  width: 72%;
+  margin: 4.2rem auto 6rem;
+  padding-inline-start: 0rem;
+}
+
+.list-of-products li {
+  margin-bottom: 2.5rem;
+}
+
+.product img {
+  height: 310px;
+}
+
+.product h3 {
+  font-family: var(--text-secondary);
+  color: var(--color-primary);
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.product .price {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+@media screen and (min-width: 744px) {
+  /* Scale body to new minimum width */
+  body {
+    width: 744px;
+  }
+  /* Other portrait tablet styles */
+  .category-hero h1 {
+    top: 35%;
+    left: 21%;
+    right: 21%;
+    width: 57%;
+    text-align: center;
+  }
+
+  ul.list-of-products {
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .list-of-products li {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Scale body to new minimum width */
+  body {
+    width: 1200px;
+  }
+  /* Other desktop styles */
+  .category-hero h1 {
+    top: 35%;
+    left: 31%;
+    right: 31%;
+    width: 37.5%;
+    font-size: 6rem;
+  }
+
+  ul.list-of-products {
+    width: 81%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .list-of-products li {
+    width: 28%;
+  }
+}

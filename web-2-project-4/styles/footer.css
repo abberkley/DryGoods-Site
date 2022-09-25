@@ -1,0 +1,96 @@
+/* Center body and fix to minimum width */
+body {
+  width: 360px;
+  margin: 0 auto;
+}
+
+/* Ensures base font size is a factor of 10 for using rems for font sizes */
+html {
+  font-size: 10px;
+}
+
+/* Images will always scale to be no wider than their container */
+img {
+  max-width: 100%;
+}
+
+/* Other mobile (default) styles go here */
+footer a.footer-logo img {
+  background-color: var(--color-bg);
+  width: 35%;
+  padding: 4rem 11.75rem;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.footer-links {
+  padding: 4rem 5.3rem 8rem;
+}
+
+.footer-links ul {
+  padding-inline-start: 0;
+}
+
+.footer-links a {
+  color: #ffffff;
+}
+
+.link-style {
+  margin: 0px;
+}
+
+.footer-links_help {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 744px) {
+  /* Scale body to new minimum width */
+  body {
+    width: 744px;
+  }
+  /* Other portrait tablet styles */
+
+  footer a.footer-logo img {
+    padding: 4.8rem 24.2rem;
+  }
+
+  .footer-links {
+    padding: 4.1rem 10.6rem 14.9rem;
+  }
+
+  .footer-link-categories {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Scale body to new minimum width */
+  body {
+    width: 1200px;
+  }
+  /* Other desktop styles */
+  footer a.footer-logo img {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7.4rem 38.5rem;
+  }
+
+  .footer-links {
+    padding: 9.8rem 14.8rem 22rem;
+  }
+
+  h3 {
+    size: 3.2rem;
+    line-height: 3rem;
+  }
+
+  footer a,
+  footer p {
+    size: 2rem;
+    line-height: 3rem;
+  }
+}
