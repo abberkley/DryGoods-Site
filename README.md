@@ -1,3 +1,3 @@
 # Drygoods redesign concept
 
-Made with html and sass.
+Made with html and refactored css with sass
